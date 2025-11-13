@@ -1,0 +1,24 @@
+[project]
+name = 'decentralized-education-credentials'
+description = ''
+authors = []
+telemetry = false
+cache_dir = './.cache'
+requirements = []
+[contracts.credential-issuance-and-storage]
+path = 'contracts/credential-issuance-and-storage.clar'
+clarity_version = 3
+epoch = 3.1
+
+[contracts.skill-verification-and-endorsement]
+path = 'contracts/skill-verification-and-endorsement.clar'
+clarity_version = 3
+epoch = 3.1
+[repl.analysis]
+passes = ['check_checker']
+
+[repl.analysis.check_checker]
+strict = false
+trusted_sender = false
+trusted_caller = false
+callee_filter = false
